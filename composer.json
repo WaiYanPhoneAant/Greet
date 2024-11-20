@@ -1,0 +1,31 @@
+{
+    "name": "wypa/greet",
+    "description": "A simple Laravel package to greet users",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wypa\\Greet\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "waiyanphoneaant",
+            "email": "wypa07@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wypa\\Greet\\GreetServiceProvider"
+            ],
+            "aliases": {
+                "Greet": "Wypa\\Greet\\Facades\\Greet"
+            }
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": "^9.0"
+    }
+}
